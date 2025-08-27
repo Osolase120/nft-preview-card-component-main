@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    height: 100%;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    margin-top: 60px;
+    height: 620px;
+    width: 380px;
+    border: 1px solid hsl(216, 50%, 16%);
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 5px;
+}
+
+.img{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+}
+
+.equilibrium {
+    margin-top: 25px;
+    margin-left: 15px;
+    height: 320px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.cover {
+  position: absolute;
+  top: 25px;
+  /* right: 0;
+  bottom: 0; */
+  left: 15px;
+  height: 320px;
+  width: 320px;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.view{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.img:hover .cover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.img:hover .cover + .view{
+  display: block;
+}
+
+h3 {
+    margin-top: 18px;
+    margin-left: 25px;
+    color: hsl(0, 0%, 100%);
+}
+
+h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.collection {
+    margin-top: 15px;
+    margin-left: 25px;
+    line-height: 1.5;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: 25px;
+    width: 320px;
+}
+
+.ETH {
+    position: relative;
+    top: -2px;
+    margin-left: 4px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.days {
+    position: relative;
+    top: -1px;
+    margin-left: 4px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+hr {
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 317px;
+    color: hsl(215, 32%, 27%);
+}
+
+.image {
+    display: flex;
+}
+
+.avatar {
+    margin-top: 20px;
+    margin-left: 25px;
+    height: 45px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+.Creation {
+    margin-top: 30px;
+    margin-left: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.Creation span {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.Creation span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+ main {
+    margin-top: 60px;
+    height: 620px;
+    width: 340px;
+    border: 1px solid hsl(216, 50%, 16%);
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 5px;
+}
+
+.equilibrium {
+    margin-top: 25px;
+    margin-left: 15px;
+    height: 320px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.cover {
+  position: absolute;
+  top: 25px;
+  /* right: 0;
+  bottom: 0; */
+  left: 15px;
+  height: 320px;
+  width: 300px;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: 25px;
+    width: 280px;
+}
+
+hr {
+    width: 270px;
+}
+}
